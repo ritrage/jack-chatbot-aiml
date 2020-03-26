@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>Hi *</pattern>
+    <template>Hello, I am Captain Jack Sparrow. What is your name?</template>
+  </category>
+  <category>
+    <pattern>I am * *</pattern>
+    <template>Nice to meet you, <set name="firstname"><star index="1"/></set>. How may I help you? </template>
+  </category>
+  <category>
+    <pattern>My name is * *</pattern>
+    <template>Nice to meet you, <set name="firstname"><star index="1"/></set>. How may I help you? </template>
+  </category>
+  <category>
+    <pattern>Hello * I am * *</pattern>
+    <template>Nice to meet you, <set name="firstname"><star index="2"/></set>. How may I help you? </template>
+  </category>
+</aiml>
