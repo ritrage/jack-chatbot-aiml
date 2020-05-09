@@ -24,16 +24,14 @@
     <pattern>Dial *</pattern>
     <template>calling <star/> <oob><dial><star/></dial></oob></template>
 </category>
-<category>
-    <pattern>* Course *</pattern>
-    <template>
-        <srai><star/>Courses<star/></srai>
-    </template>
-</category>
+
 <category>
     <pattern>* Courses *</pattern>
     <template>What is your topic of interest?</template>
 </category>
+
+<category><pattern>* Course *</pattern><template><srai>* COURSES *</srai></template></category>
+
 <category>
     <pattern>Nothing</pattern>
     <template>Okay, then let me suggest some courses that are in trend
@@ -77,7 +75,6 @@
     <template>Consider taking these if you haven't
     <ul>
         <li>Aritficial Intelligence</li>
-        <li>Computer Graphics and Animation</li>
         <li>Blockchain Technologies</li>
         <li>Machine Learning</li>
         <li>IoT</li>
@@ -85,6 +82,30 @@
     </ul>
     </template>
 </category>
+<category>
+    <pattern>Graphics</pattern>
+    <template>Consider taking these if you haven't
+    <ul>
+        <li>Computer Graphics</li>
+        <li>2D animation</li>
+        <li>3D animation</li>
+        <li>Pixar in a box</li>
+        <li>2D and 3D Object Model making</li>
+        <li>Blender Basics</li>
+    </ul>
+    </template>
+</category>
+
+<category><pattern>Animations</pattern><template><srai>GRAPHICS</srai></template></category>
+
+
+<category><pattern>3D Animations</pattern><template><srai>GRAPHICS</srai></template></category>
+
+<category><pattern>3D Animation</pattern><template><srai>GRAPHICS</srai></template></category>
+<category><pattern>2D Animation</pattern><template><srai>GRAPHICS</srai></template></category>
+
+<category><pattern>Animation</pattern><template><srai>GRAPHICS</srai></template></category>
+
 <category>
     <pattern>Artificial Intelligence</pattern>
     <template><srai>AI</srai></template>
@@ -121,7 +142,7 @@
         </template>
     </category>
 <category>
-        <pattern>SEARCH FOR *></pattern>
+        <pattern>SEARCH FOR *</pattern>
         <template>
              <srai>GOOGLE <star/></srai>
         </template>
