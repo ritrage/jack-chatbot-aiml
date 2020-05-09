@@ -25,6 +25,91 @@
     <template>calling <star/> <oob><dial><star/></dial></oob></template>
 </category>
 <category>
+    <pattern>* Course *</pattern>
+    <template>
+        <srai><star/>Courses<star/></srai>
+    </template>
+</category>
+<category>
+    <pattern>* Courses *</pattern>
+    <template>What is your topic of interest?</template>
+</category>
+<category>
+    <pattern>Nothing</pattern>
+    <template>Okay, then let me suggest some courses that are in trend
+        <ul>
+            <li>Aritficial Intelligence</li>
+            <li>Computer Graphics and Animation</li>
+            <li>Fundamentals Of Financial Acounting</li>
+            <li>Derivatives of Risk and Mgmt</li>
+            <li>Software Product Management</li>
+            <li>Full Stack Development</li>
+            <li>Software Development</li>
+            <li>Blockchain Technologies</li>
+            <li>Machine Learning</li>
+            <li>IoT</li>
+            <li>Stock Portfolio Mgmt</li>
+        </ul>
+    </template>
+</category>
+<category>
+    <pattern>No *</pattern>
+    <template><srai>Nothing</srai></template>
+</category>
+<category>
+    <pattern>* don't *</pattern>
+    <template><srai>Nothing</srai></template>
+</category>
+<category>
+    <pattern>Nothing *</pattern>
+    <template><srai>Nothing</srai></template>
+</category>
+<category>
+    <pattern>Thank You *</pattern>
+    <template><srai>Thanks<star/></srai></template>
+</category>
+<category>
+    <pattern>Thanks *</pattern>
+    <template>My Pleasure</template>
+</category>
+<category>
+    <pattern>AI</pattern>
+    <template>Consider taking these if you haven't
+    <ul>
+        <li>Aritficial Intelligence</li>
+        <li>Computer Graphics and Animation</li>
+        <li>Blockchain Technologies</li>
+        <li>Machine Learning</li>
+        <li>IoT</li>
+        <li>Robotics</li>
+    </ul>
+    </template>
+</category>
+<category>
+    <pattern>Artificial Intelligence</pattern>
+    <template><srai>AI</srai></template>
+</category>
+<category>
+    <pattern>ML</pattern>
+    <template><srai>AI</srai></template>
+</category>
+<category>
+    <pattern>Machine Learning</pattern>
+    <template><srai>AI</srai></template>
+</category>
+<category>
+    <pattern>Robots</pattern>
+    <template><srai>AI</srai></template>
+</category>
+<category>
+    <pattern>Robot</pattern>
+    <template><srai>AI</srai></template>
+</category>
+<category>
+    <pattern>Robotics</pattern>
+    <template><srai>AI</srai></template>
+</category>
+<category>
         <pattern>GOOGLE *</pattern>
         <template>
              <random>
